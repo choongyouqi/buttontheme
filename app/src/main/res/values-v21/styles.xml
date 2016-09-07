@@ -1,0 +1,18 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Button.Filled" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:background">@drawable/button_filled</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+    </style>
+</resources>

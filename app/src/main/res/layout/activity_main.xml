@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/coordinatorLayout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dividerHeight"
+            android:text="Baseline"/>
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:text="Normal Button"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_filled"
+            android:foreground="?selectableItemBackground"
+            android:onClick="onClick"
+            android:stateListAnimator="@null"
+            android:text="Wrap Content 36dp"
+            android:textColor="@color/md_white_1000"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dividerHeight"
+            android:text="Material Guideline 48dp Touch Target"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_filled_padding"
+            android:foreground="?selectableItemBackground"
+            android:onClick="onClick"
+            android:stateListAnimator="@null"
+            android:text="Wrap Content 48dp"
+            android:textColor="@color/md_white_1000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dividerHeight"
+            android:text="Styled Button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                style="@style/Widget.Button.Border"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="Styled Border"/>
+
+            <Button
+                style="@style/Widget.Button.Filled"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="Styled Filled"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dividerHeight"
+            android:text="Disabled Button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                style="@style/Widget.Button.Border"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:onClick="onClick"
+                android:text="Disabled Border"/>
+
+            <Button
+                style="@style/Widget.Button.Filled"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:onClick="onClick"
+                android:text="Disabled Filled"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
