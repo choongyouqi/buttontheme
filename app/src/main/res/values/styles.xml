@@ -37,7 +37,7 @@
         <item name="android:background">@drawable/button_filled</item>
         <item name="android:foreground">?selectableItemBackground</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
-        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textColor">@drawable/button_filled</item>
     </style>
 
 </resources>
