@@ -24,12 +24,12 @@
 
     </style>
 
-    <style name="Widget.Button.Border" parent="Widget.AppCompat.Button">
+    <style name="Widget.Button.Outline" parent="Widget.AppCompat.Button">
         <item name="android:layout_height">36dp</item>
-        <item name="android:background">@drawable/button_border</item>
+        <item name="android:background">@drawable/button_outline</item>
         <item name="android:foreground">?selectableItemBackground</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
-        <item name="android:textColor">@drawable/button_border</item>
+        <item name="android:textColor">@drawable/button_outline</item>
     </style>
 
     <style name="Widget.Button.Filled" parent="Widget.AppCompat.Button">

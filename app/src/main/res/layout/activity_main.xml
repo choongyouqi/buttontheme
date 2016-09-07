@@ -87,13 +87,13 @@
             android:weightSum="2">
 
             <Button
-                style="@style/Widget.Button.Border"
+                style="@style/Widget.Button.Outline"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/buttonHeight"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="Styled Border"/>
+                android:text="Styled Outline"/>
 
             <Button
                 style="@style/Widget.Button.Filled"
@@ -118,14 +118,14 @@
             android:weightSum="2">
 
             <Button
-                style="@style/Widget.Button.Border"
+                style="@style/Widget.Button.Outline"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/buttonHeight"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:enabled="false"
                 android:onClick="onClick"
-                android:text="Disabled Border"/>
+                android:text="Disabled Outline"/>
 
             <Button
                 style="@style/Widget.Button.Filled"
